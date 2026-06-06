@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Life-Рента+ | Страхование жизни с накоплением капитала</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+      background: #0a1628;
+      color: #fff;
+    }
+    .container {
+      max-width: 420px;
+      margin: 0 auto;
+      padding: 20px 16px;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .logo {
+      width: 48px;
+      height: 48px;
+      background: #0f1e35;
+      border: 2px solid #D4AF37;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      font-weight: 700;
+      color: #D4AF37;
+    }
+    .logo-text .title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #D4AF37;
+    }
+    .logo-text .subtitle {
+      font-size: 11px;
+      color: #9ca3af;
+    }
+    .photo {
+      width: 100%;
+      max-height: 320px;
+      object-fit: cover;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+    .headline {
+      margin-bottom: 20px;
+    }
+    .headline .top {
+      font-size: 18px;
+      color: #D4AF37;
+      margin-bottom: 4px;
+    }
+    .headline .main {
+      font-size: 32px;
+      font-weight: 800;
+      line-height: 1.1;
+      color: #D4AF37;
+    }
+    .headline .sub {
+      font-size: 14px;
+      color: #9ca3af;
+      margin-top: 6px;
+    }
+    .card {
+      background: #0f1e35;
+      border: 1px solid #3b5b8c;
+      border-radius: 16px;
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+    .section-title {
+      font-size: 12px;
+      color: #D4AF37;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+    .period {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+    .period-num {
+      width: 28px;
+      height: 28px;
+      background: #1a2d4a;
+      border: 1px solid #D4AF37;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: #D4AF37;
+    }
+    .period-text {
+      font-size: 13px;
+    }
+    .period-text .title {
+      color: #D4AF37;
+      font-weight: 600;
+    }
+    .period-text .desc {
+      color: #9ca3af;
+      font-size: 12px;
+    }
+    .protection {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .prot-item {
+      text-align: center;
+      font-size: 11px;
+    }
+    .prot-item svg {
+      width: 28px;
+      height: 28px;
+      margin-bottom: 4px;
+    }
+    .benefit {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .benefit svg {
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+    }
+    .benefit-text .title {
+      font-weight: 600;
+      color: #D4AF37;
+      font-size: 13px;
+    }
+    .benefit-text .desc {
+      font-size: 12px;
+      color: #9ca3af;
+    }
+    .cta-btn {
+      background: linear-gradient(#D4AF37, #F0D060);
+      color: #0a1628;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 16px;
+      border: none;
+      border-radius: 14px;
+      width: 100%;
+      margin: 20px 0;
+    }
+    .phone {
+      display: block;
+      text-align: center;
+      font-size: 20px;
+      color: #4ade80;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .tagline {
+      text-align: center;
+      color: #D4AF37;
+      font-weight: 700;
+      margin: 20px 0;
+    }
+    .footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .footer-item {
+      background: #0f1e35;
+      border: 1px solid #3b5b8c;
+      border-radius: 12px;
+      padding: 12px;
+      font-size: 12px;
+    }
+    .footer-item .title {
+      color: #D4AF37;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="logo">L</div>
+    <div class="logo-text">
+      <div class="title">Life-Рента+</div>
+      <div class="subtitle">Страхование жизни с накоплением капитала</div>
+    </div>
+  </div>
+
+  <!-- PHOTO -->
+  <img src="consultant.jpg" class="photo" alt="Консультант">
+
+  <!-- HEADLINE -->
+  <div class="headline">
+    <div class="top">Создайте второй источник</div>
+    <div class="main">ДОХОДА<br>на пенсии</div>
+    <div class="sub">Финансовая свобода начинается сегодня</div>
+  </div>
+
+  <!-- ДВА ПЕРИОДА -->
+  <div class="card">
+    <div class="section-title">ДВА ПЕРИОДА — ОДНА ЦЕЛЬ</div>
+    <div class="period">
+      <div class="period-num">I</div>
+      <div class="period-text">
+        <div class="title">ПЕРИОД НАКОПЛЕНИЯ</div>
+        <div class="desc">Формирование капитала и страховая защита</div>
+      </div>
+    </div>
+    <div class="period">
+      <div class="period-num">II</div>
+      <div class="period-text">
+        <div class="title">ПЕРИОД ВЫПЛАТ</div>
+        <div class="desc">Регулярные аннуитетные выплаты в выбранный срок</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ДОПОЛНИТЕЛЬНАЯ ЗАЩИТА -->
+  <div class="card">
+    <div class="section-title">ДОПОЛНИТЕЛЬНАЯ ЗАЩИТА</div>
+    <div class="protection">
+      <div class="prot-item">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#D4AF37"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318z" /></svg>
+        <div>При несчастном случае</div>
+      </div>
+      <div class="prot-item">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#D4AF37"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 01-9 9 9 9 0 01-9-9 9 9 0 019-9 9 9 0 019 9z" /></svg>
+        <div>При установлении инвалидности</div>
+      </div>
+      <div class="prot-item">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#D4AF37"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
+        <div>При тяжёлых повреждениях</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ПРЕИМУЩЕСТВА -->
+  <div style="margin: 24px 0 12px;">
+    <div class="section-title">ВАШИ ПРЕИМУЩЕСТВА</div>
+  </div>
+
+  <div class="benefit">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#D4AF37"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 01-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+    <div class="benefit-text">
+      <div class="title">ЗАЩИТА СЕМЬИ</div>
+      <div class="desc">Страхование для вас и ваших близких</div>
+    </div>
+  </div>
+
+  <div class="benefit">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#D4AF37"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 01-9 9 9 9 0 01-9-9 9 9 0 019-9 9 9 0 019 9z" /></svg>
+    <div class="benefit-text">
+      <div class="title">КРУГЛОСУТОЧНАЯ ЗАЩИТА</div>
+      <div class="desc">Надёжная поддержка 24/7 по всему миру</div>
+    </div>
+  </div>
+
+  <div class="benefit">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#D4AF37"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 4.01V8" /></svg>
+    <div class="benefit-text">
+      <div class="title">РЕГУЛЯРНЫЕ ВЫПЛАТЫ</div>
+      <div class="desc">Получайте стабильный доход в выбранный Вами срок</div>
+    </div>
+  </div>
+
+  <div class="benefit">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#D4AF37"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+    <div class="benefit-text">
+      <div class="title">УЧАСТИЕ В ПРИБЫЛИ</div>
+      <div class="desc">Начиная с 3-го года страхования</div>
+    </div>
+  </div>
+
+  <!-- КНОПКА -->
+  <button onclick="openWhatsApp()" style="background: linear-gradient(#D4AF37, #F0D060); color: #0a1628; font-weight: 700; font-size: 16px; padding: 16px; border: none; border-radius: 14px; width: 100%; margin: 20px 0;">
+    ПОЛУЧИТЬ ПЕРСОНАЛЬНУЮ КОНСУЛЬТАЦИЮ
+  </button>
+
+  <!-- ТЕЛЕФОН -->
+  <div style="text-align: center;">
+    <a href="tel:+77025738727" style="color: #4ade80; font-size: 22px; font-weight: 600; text-decoration: none;">+7 702 573 8727</a>
+    <div style="color: #9ca3af; font-size: 13px; margin-top: 4px;">«Life-Рента+»</div>
+  </div>
+
+  <!-- TAGLINE -->
+  <div style="text-align: center; color: #D4AF37; font-weight: 700; margin: 24px 0 16px;">
+    ОДНА ПЕНСИЯ ХОРОШО, А ДВЕ — ЛУЧШЕ!
+  </div>
+
+  <!-- FOOTER -->
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+    <div class="footer-item">
+      <div class="title">НАДЁЖНО</div>
+      <div style="color: #6b7280; font-size: 11px;">Работаем на рынке финансовых услуг</div>
+    </div>
+    <div class="footer-item">
+      <div class="title">ВЫГОДНО</div>
+      <div style="color: #6b7280; font-size: 11px;">Прозрачные условия и честные выплаты</div>
+    </div>
+    <div class="footer-item">
+      <div class="title">УДОБНО</div>
+      <div style="color: #6b7280; font-size: 11px;">Онлайн-сервис и поддержка</div>
+    </div>
+    <div class="footer-item">
+      <div class="title">ДЛЯ ВСЕЙ СЕМЬИ</div>
+      <div style="color: #6b7280; font-size: 11px;">Программы для взрослых и детей</div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function openWhatsApp() {
+    const phone = '77025738727';
+    const message = encodeURIComponent('Здравствуйте! Хочу получить персональную консультацию по программе Life-Рента+');
+    window.open('https://wa.me/' + phone + '?text=' + message, '_blank');
+  }
+</script>
+
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a07838d48eaaece9',t:'MTc4MDc1NzM0OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
